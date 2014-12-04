@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="GridApp">
+<head>
+    <meta charset="utf-8">
+    <title>Grid Example</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-sanitize.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
+    <script type="text/javascript" src="Scripts/ng-Grid.js"></script>
+    <script type="text/javascript" src="Scripts/select.js"></script>
+    <script type="text/javascript" src="Scripts/main.js"></script>
+    <link rel="stylesheet" href="Styles/ng-grid.css" />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="stylesheet" href="Styles/select.css">
+    
+    <!-- Select2 theme -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/css/selectize.default.css">
+    
+    <style>
+        body {
+            padding: 15px;
+        }
+
+        .select2 > .select2-choice.ui-select-match {
+            /* Because of the inclusion of Bootstrap */
+            height: 29px;
+        }
+
+        .selectize-control > .selectize-dropdown {
+            top: 36px;
+        }
+    </style>
+    
+
+</head>
+    <body ng-controller="GridController">
+        <div>
+            <h3>Array of strings</h3>
+            <ui-select multiple ng-model="multipleDemo.colors" theme="select2" style="width: 300px;">
+                <ui-select-match placeholder="Select colors...">{{$item}}</ui-select-match>
+                <ui-select-choices repeat="color in availableColors | filter:$select.search">
+                    {{color}}
+                </ui-select-choices>
+            </ui-select>
+        </div>
+        <br/>
+        <div class="gridStyle" ng-grid="gridOptions"></div>
+    </body>
+</html>

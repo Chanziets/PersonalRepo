@@ -1,0 +1,37 @@
+﻿<div id="CategoryTopicHierarchy" style="background-color: lightgrey">
+    <div ng-controller="CategoryTopicManageController">
+        <div class="dropdown">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="background-color: ghostwhite;"><span ng-bind="SelectCategoryName"></span><b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownCountry">
+                <li ng-repeat="category in HierArchyCategoriesList">
+                    <a ng-click="GetTopics($index)"><span ng-bind="category.CategoryName"></span></a>
+                </li>
+            </ul>
+        </div>
+        <br />
+        <div class="simpleDemo row">
+            <div class="col-md-6">
+                <div class="panel panel-info" style="background-color: darkgray; border-color: lightgrey">
+                    <div class="panel-heading" style="background-color: darkgray; border-color: lightgrey">
+                        <h4>Topics</h4>
+                    </div>
+                    <div class="panel-body">
+                        <ul dnd-list="topics">
+                            <li ng-repeat="topic in topics" dnd-draggable="topic" dnd-moved="updateTopicOrder($index)" dnd-effect-allowed="move" dnd-disable-if="DisableEditTopicOrder"
+                                dnd-selected="SelectedTopics.selected = topic" ng-class="{'selected': SelectedTopics.selected === topic}">
+                                {{topic.TopicName}}
+                            </li>
+                        </ul>
+                        <br/>
+                        <label ng-bind="OderingFeedback"></label>
+                        <br/>
+                        <input type="Button" value="Edit Order" class="btn btn-primary" ng-click="DisableEditCategoryTopicsOrder(false)" ng-show="topics.length > 1">
+                        <input type="Button" value="Save Order" class="btn btn-primary" ng-click="SaveTopicOrder()" ng-show="!DisableEditTopicOrder">
+                        <input type="Button" value="Cancel" class="btn btn-default" ng-click="DisableEditCategoryTopicsOrder(true)" ng-show="!DisableEditTopicOrder" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

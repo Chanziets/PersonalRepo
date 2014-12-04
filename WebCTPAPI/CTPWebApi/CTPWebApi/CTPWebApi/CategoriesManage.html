@@ -1,0 +1,44 @@
+﻿<div id="CategoryManage" style="background-color: lightgrey">
+    <div ng-controller="CategoryManageController">
+        <h4>
+            Manage Categories
+            <input ng-if="UserWriteRights" type="image" src="Images/add.png" style=" width:20px; height: 20px; align-content: center" title="Add Category" ng-click="HideCategoryAddForm(false)" />
+        </h4>
+
+        <form name="AddCategoryForm" ng-if="UserWriteRights" ng-hide="HideAddCategoryForm">
+            <label>Category Name: </label><input type="text" ng-model="category.CategoryName" required /><br>
+            <br />
+            <input type="Button" value="Add" class="btn btn-primary" ng-click="AddCategory(category)" ng-disabled="!AddCategoryForm.$valid">
+            <input type="Button" value="Cancel" class="btn btn-default" ng-click="HideCategoryAddForm(true)" />
+        </form>
+        <table class="table table-striped table-bordered" style="border-color: black">
+            <thead>
+                <tr>
+                    <th>Categories</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="category in CategoryPagingList | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
+                    <td>
+                        <div ng-controller="CategoryEditController">
+                            <a editable-text="category.CategoryName" onbeforesave="ValidateCategory($data)" onaftersave="EditCategory()" e-required>{{category.CategoryName}}</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <ul class="pagination">
+                            <li><a href="" ng-click="GetCategoryPagingList(-1);">&laquo;</a></li>
+                            <li ng-repeat="n in [] | range: pagination.numPages" ng-class="{active: n == pagination.page}">
+                                <a href="" ng-click="GetCategoryPagingListPage(n)">{{n + 1}}</a>
+                            </li>
+                            <li><a href="" ng-click="GetCategoryPagingList(1);">&raquo;</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

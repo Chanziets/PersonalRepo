@@ -1,0 +1,42 @@
+﻿<div style="background-color: lightgrey;">
+    <div class="col-md-12 text-left">
+        <table class="table">
+            <tr>
+                <td style="width: 500px">
+                    <h4>
+                        Categories<input ng-if="UserWriteRights" type="image" src="Images/manage.jpg" style=" width:20px; height: 20px; align-content: center" title="Manage Categories" ng-click="SetSubView('ManageCategories','manage')" />
+                    </h4>
+                 <p>{{Time | date:'medium'}}</p>
+                </td>
+                <td ng-show="topics.length > 0">
+                    <h4>
+                        Categories Topics<input ng-if="UserWriteRights" type="image" src="Images/add.png" style=" width:20px; height: 20px; align-content: center" title="Add Topic" ng-click="SetSubView('AddTopic','addTopic')" />
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <ui-select multiple ng-model="MultipleSelect.categories" on-remove="removecategorytopics($item)" theme="select2" style="width: 300px;">
+                            <ui-select-match placeholder="Select category...">{{$item.CategoryName}}</ui-select-match>
+                            <ui-select-choices repeat="category in categories">
+                                {{category.CategoryName}}
+                            </ui-select-choices>
+                        </ui-select>
+                    </div>
+                </td>
+                <td ng-show="topics.length > 0">
+                    <div class="container-fluid">
+                        <label>Static typeahead</label>
+                        <input  type="text" ng-model="TopicsSelected" typeahead="topic as topic.TopicName for topic in topics | filter:{TopicName:$viewValue}" class="form-control" style="width: 700px">
+                        <label>Dynamic typeahead</label>
+                        <input type="text" ng-model="TopicsSelected3" typeahead="topic as topic.TopicName for topic in getTopicsPerCategorySearch($viewValue) | filter:{TopicName:$viewValue}" class="form-control" style="width: 700px">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div id="content">
+            <div ng-include="TemplateUrl()"></div>
+        </div>
+    </div>
+</div>

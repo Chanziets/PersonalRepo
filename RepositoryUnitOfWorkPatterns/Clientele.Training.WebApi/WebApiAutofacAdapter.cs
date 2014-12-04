@@ -1,0 +1,63 @@
+﻿using System;
+using System.Reflection;
+using System.Web.Http;
+using Autofac;
+using Autofac.Builder;
+using Autofac.Integration.WebApi;
+using Hermes.Ioc;
+using Hermes.ObjectBuilder.Autofac;
+using IContainer = Autofac.IContainer;
+
+namespace Clientele.Training.WebApi
+{
+    public class WebApiAutofacAdapter : AutofacAdapter
+    {
+        public WebApiAutofacAdapter()
+            : base(ConfigureApiDependencies())
+        {
+
+        }
+
+        private static IContainer ConfigureApiDependencies()
+        {
+            var builder = new ContainerBuilder();
+        
+
+            builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
+            builder.RegisterWebApiModelBinders(Assembly.GetExecutingAssembly());
+
+            builder.RegisterWebApiModelBinderProvider();
+            builder.RegisterWebApiFilterProvider(GlobalConfiguration.Configuration);
+
+            return builder.Build();
+        }
+
+        public AutofacWebApiDependencyResolver BuildAutofacDependencyResolver()
+        {
+            return new AutofacWebApiDependencyResolver(LifetimeScope);
+        }
+
+        public override Hermes.Ioc.IContainer BeginLifetimeScope()
+        {
+            return new AutofacAdapter(LifetimeScope.BeginLifetimeScope("Hermes"));
+        }
+
+        protected override void ConfigureLifetimeScope<T>(DependencyLifecycle dependencyLifecycle, IRegistrationBuilder<T, ConcreteReflectionActivatorData, SingleRegistrationStyle> registration)
+        {
+            switch (dependencyLifecycle)
+            {
+                case DependencyLifecycle.SingleInstance:
+                    registration.SingleInstance();
+                    break;
+                case DependencyLifecycle.InstancePerDependency:
+                    registration.InstancePerDependency();
+                    break;
+                case DependencyLifecycle.InstancePerUnitOfWork:
+                    registration.InstancePerRequest("AutofacWebRequest", "Hermes");
+                    break;
+                default:
+                    throw new ArgumentException("Unknown container lifecycle - " + dependencyLifecycle);
+            }
+        }
+    }
+}

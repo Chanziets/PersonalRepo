@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="CTPApp">
+<!--rootscope-->
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-route.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-sanitize.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/textAngular/1.2.2/textAngular.min.js'></script>
+    <script type="text/javascript" src="Scripts/ui-bootstrap-tpls-0.10.0.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts/xeditable.js"></script>
+    <script type="text/javascript" src="Scripts/main.js"></script>
+    <script type="text/javascript" src="Scripts/ng-Grid.js"></script>
+    <script type="text/javascript" src="Scripts/select.js"></script>
+    <script type="text/javascript" src="Scripts/Pagination.js"></script>
+    <script type="text/javascript" src="Scripts/angularDropAndDrag.js"></script>
+    <script type="text/javascript" src="Scripts/anuglar-file-upload.js"></script>
+    <!--<script type="text/javascript" src="Scripts/angular-wyswig.js"></script>
+    <script type="text/javascript" src="Scripts/colorpicker.js"></script>-->
+    <script type="text/javascript" src="Scripts/CategoryWebApiServices.js"></script>
+    <script type="text/javascript" src="Scripts/CategoryTopicReportService.js"></script>
+    <script type="text/javascript" src="Scripts/TopicWebApiServices.js"></script>
+    <script type="text/javascript" src="Scripts/CtpModuleController.js"></script>
+    <script type="text/javascript" src="Scripts/CtpDeleteModuleController.js"></script>
+    <script type="text/javascript" src="Scripts/ModalCategoryController.js"></script>
+    <script type="text/javascript" src="Scripts/CatgoryEditController.js"></script>
+    <script type="text/javascript" src="Scripts/TopicAddEditController.js"></script>
+    <script type="text/javascript" src="Scripts/ManageTabsController.js"></script>
+    <script type="text/javascript" src="Scripts/CategoryManageController.js"></script>
+    <script type="text/javascript" src="Scripts/CategoryTopicManageController.js"></script>
+    <script type="text/javascript" src="Scripts/CategoryReportingController.js"></script>
+    <link rel="stylesheet" data-require="bootstrap-css@3.1.1" data-semver="3.1.1" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="Styles/bootstrap.css">
+    <link rel="stylesheet" href="Styles/xeditable.css">
+    <link rel="stylesheet" href="Styles/ng-grid.css"/>
+    <link rel="stylesheet" href="Styles/select.css"/>
+    <link rel="stylesheet" href="Styles/dragdroplist.css"/>
+    <link rel="stylesheet" href="Styles/style.css"/>
+
+    
+    <!-- Select2 theme -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.8.5/css/selectize.default.css">
+    
+    <style>
+        body {
+            padding: 15px;
+        }
+
+        .select2 > .select2-choice.ui-select-match {
+            /* Because of the inclusion of Bootstrap */
+            height: 29px;
+        }
+
+        .selectize-control > .selectize-dropdown {
+            top: 36px;
+        }
+    </style>
+
+    <title>CTP - Clientele Training Portal</title>
+
+</head>
+<body style="background-color: lightgrey;">
+    <header>
+        <h1>CTP - Clientele Training Portal</h1>
+    </header>
+    <div id="main">
+        <br />
+        <br />
+        <div ng-view=""></div>
+    </div>
+</body>
+</html>

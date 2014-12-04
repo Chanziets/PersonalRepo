@@ -1,0 +1,74 @@
+﻿<div style="background-color: lightgrey;">
+        <div class="col-sm-3 text-left">
+            <table>
+                <tr>
+                    <td>
+                        <h2>Training Areas</h2>
+                    </td>
+                    <td>
+                        <input type="image" src="Images/basic1-171_add_new_plus-128.png" style=" width:20px; height: 20px; align-content: center" ng-click="ShowAddForm(true)" title="Add Area" />
+                    </td>
+                </tr>
+                <tr ng-repeat="area in trainingareas | orderBy:'AreaName': true">
+                    <td><a ng-click="getAreaContext($index)">{{area.AreaName}}</a></td>
+                    <td>
+                        <input type="image" src="Images/Trash_Can-128.png" style=" width:20px; height: 20px;" ng-click="removeArea($index)" title="Delete Area" />
+                        <input type="image" src="Images/edit.png" style=" width:20px; height: 20px; align-content: center" ng-click="ShowEditForm(true, $index)" title="Edit Area" />
+                    </td>
+                </tr>
+            </table>
+            <br /><br /><br /><br /><br /><br /><br />
+            <div class="row">
+                <div class="col-lg-6" style="width: 800px">
+                    <form name="AreaForm" ng-show="AddFormDisplay()">
+                        <h3> Add new Training Area</h3>
+                        <table>
+                            <tr>
+                                <td>Area Name:</td>
+                                <td><input type="text" ng-model="area.AreaName" required /></td>
+                            </tr>
+                            <tr>
+                                <td>Area Context:</td>
+                                <td><input type="text" ng-model="area.AreaContext" style=" width: 500px; height: 300px; text-align: inherit;" required /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="Button" value="Add" ng-click="addArea(area)" ng-disabled="!AreaForm.$valid" /></td>
+                                <td colspan="2"><input type="Button" value="Cancel" ng-click="ShowAddForm(false)" /></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <form name="AreaEditForm" ng-show="EditFormDisplay()">
+                        <h3> Edit Training Area</h3>
+                        <table>
+                            <tr>
+                                <td>Area Name:</td>
+                                <td><input type="text" ng-model="EditArea.AreaName" required /></td>
+                            </tr>
+                            <tr>
+                                <td>Area Context:</td>
+                                <td><textarea ng-model="EditArea.AreaContext" style=" width: 500px; height: 300px; text-align: inherit;" required>{{EditArea.AreaContext}}</textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="Button" value="Update" ng-click="updateArea(EditArea)" ng-disabled="!AreaEditForm.$valid" /></td>
+                                <td colspan="2"><input type="Button" value="Cancel" ng-click="ShowEditForm(false, 0)" /></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9 col-lg-6 text-left">
+            <table>
+                <tr>
+                    <td>
+                        <h2>Training Area Information : {{traingingArea}}</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea style=" border:none; width: 700px; height: 200px; background-color: lightgrey;" readonly="readonly">{{traingingContext}}</textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</div>

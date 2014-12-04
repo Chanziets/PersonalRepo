@@ -1,0 +1,60 @@
+﻿<div style="background-color: lightgrey;">
+    <div class="col-sm-3 text-left">
+        <table>
+            <tr>
+                <td>
+                    <h2>Training Categories</h2>
+                </td>
+                <td>
+                    <input type="image" src="Images/basic1-171_add_new_plus-128.png" style=" width:20px; height: 20px; align-content: center" ng-click="OpenAddCategory()" title="Add Category" />
+                </td>
+            </tr>
+            <tr ng-repeat="category in categories">
+                <td>
+                    <div ng-controller="CategoryEditController">
+                        <a editable-text="category.CategoryName" onbeforesave="ValidateCategory($data)" onaftersave="EditCategory()" e-required>{{category.CategoryName}}</a>
+                    </div>
+                </td>
+                <td>
+                    <input type="image" src="Images/arrow.png" style=" width:20px; height: 20px; align-content: center" title="Category Topics" ng-click="GetTopicsPerCategory($index)" />
+                    <input type="image" src="Images/Trash_Can-128.png" style=" width:20px; height: 20px;" ng-click="RemoveCategory($index)" title="Delete Category" ng-controller="CtpDeleteModuleContoller" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-sm-3 text-left" ng-show="topics.length > 0">
+        <table>
+            <tr>
+                <td>
+                    <h2>{{CategoryName}} topics</h2>
+                </td>
+                <td>
+                    <input type="image" src="Images/basic1-171_add_new_plus-128.png" style=" width:20px; height: 20px; align-content: center"  title="Add Topic" />
+                </td>
+            </tr>
+            <tr ng-repeat="topic in topics">
+                <td><a ng-click="GetTopicContext($index)">{{topic.TopicName}}</a></td>
+                <td>
+                    <div ng-controller="CtpDeleteModuleContoller">
+                        <input type="image" src="Images/Trash_Can-128.png" style=" width:20px; height: 20px;" ng-click="RemoveTopic($index)" title="Delete Topic" />
+                    </div>
+                    <input type="image" src="Images/edit.png" style=" width:20px; height: 20px; align-content: center" title="Edit Topic" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-sm-9 col-lg-6 text-left" ng-show="topicName.length > 0">
+        <table>
+            <tr>
+                <td>
+                    <h2>Topic Information : {{topicName}}</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea style=" border:none; width: 700px; height: 200px; background-color: lightgrey;" readonly="readonly">{{topicContext}}</textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

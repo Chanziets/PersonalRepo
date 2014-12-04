@@ -1,0 +1,5 @@
+C:\Clientele Source Code\Channel\src\RepositoryUnitOfWorkPatterns\Clientele.Training.Contracts\bin\Debug\Clientele.Training.Contracts.dll
+C:\Clientele Source Code\Channel\src\RepositoryUnitOfWorkPatterns\Clientele.Training.Contracts\bin\Debug\Clientele.Training.Contracts.pdb
+C:\Clientele Source Code\Channel\src\RepositoryUnitOfWorkPatterns\Clientele.Training.Contracts\obj\Debug\Clientele.Training.Contracts.dll
+C:\Clientele Source Code\Channel\src\RepositoryUnitOfWorkPatterns\Clientele.Training.Contracts\obj\Debug\Clientele.Training.Contracts.pdb
+C:\Clientele Source Code\Channel\src\RepositoryUnitOfWorkPatterns\Clientele.Training.Contracts\obj\Debug\Clientele.Training.Contracts.csprojResolveAssemblyReference.cache

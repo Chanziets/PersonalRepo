@@ -1,0 +1,63 @@
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\bin\CTPWebApi.dll.config
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\bin\CTPWebApi.dll
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\bin\CTPWebApi.pdb
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\bin\Newtonsoft.Json.dll
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\bin\System.Net.Http.Formatting.dll
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\bin\System.Web.Http.dll
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\bin\System.Web.Http.WebHost.dll
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\bin\Newtonsoft.Json.xml
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\bin\System.Net.Http.Formatting.xml
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\bin\System.Web.Http.xml
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\bin\System.Web.Http.WebHost.xml
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\obj\Debug\CTPWebApi.csprojResolveAssemblyReference.cache
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\obj\Debug\CTPWebApi.dll
+C:\Clientele Source Code\Channel\CTPWebApi\CTPWebApi\obj\Debug\CTPWebApi.pdb
+C:\Users\Chanzie\Documents\Clientele\CTPWebApi\CTPWebApi\bin\CTPWebApi.dll
+C:\Users\Chanzie\Documents\Clientele\CTPWebApi\CTPWebApi\bin\CTPWebApi.pdb
+C:\Users\Chanzie\Documents\Clientele\CTPWebApi\CTPWebApi\bin\Newtonsoft.Json.dll
+C:\Users\Chanzie\Documents\Clientele\CTPWebApi\CTPWebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\Chanzie\Documents\Clientele\CTPWebApi\CTPWebApi\bin\System.Web.Http.dll
+C:\Users\Chanzie\Documents\Clientele\CTPWebApi\CTPWebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\Chanzie\Documents\Clientele\CTPWebApi\CTPWebApi\bin\Newtonsoft.Json.xml
+C:\Users\Chanzie\Documents\Clientele\CTPWebApi\CTPWebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\Chanzie\Documents\Clientele\CTPWebApi\CTPWebApi\bin\System.Web.Http.xml
+C:\Users\Chanzie\Documents\Clientele\CTPWebApi\CTPWebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\Chanzie\Documents\Clientele\CTPWebApi\CTPWebApi\obj\Debug\CTPWebApi.csprojResolveAssemblyReference.cache
+C:\Users\Chanzie\Documents\Clientele\CTPWebApi\CTPWebApi\obj\Debug\CTPWebApi.dll
+C:\Users\Chanzie\Documents\Clientele\CTPWebApi\CTPWebApi\obj\Debug\CTPWebApi.pdb
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\CTPWebApi.dll.config
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\CTPWebApi.dll
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\CTPWebApi.pdb
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\EntityFramework.dll
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\EntityFramework.SqlServer.dll
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\Newtonsoft.Json.dll
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\System.Net.Http.Formatting.dll
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\System.Web.Http.dll
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\System.Web.Http.WebHost.dll
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\EntityFramework.xml
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\EntityFramework.SqlServer.xml
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\Newtonsoft.Json.xml
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\System.Net.Http.Formatting.xml
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\System.Web.Http.xml
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\System.Web.Http.WebHost.xml
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\obj\Debug\CTPWebApi.dll
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\obj\Debug\CTPWebApi.pdb
+C:\Clientele Source Code\Channel\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\obj\Debug\CTPWebApi.csprojResolveAssemblyReference.cache
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\CTPWebApi.dll.config
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\CTPWebApi.dll
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\CTPWebApi.pdb
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\EntityFramework.dll
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\EntityFramework.SqlServer.dll
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\Newtonsoft.Json.dll
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\System.Net.Http.Formatting.dll
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\System.Web.Http.dll
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\System.Web.Http.WebHost.dll
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\EntityFramework.xml
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\EntityFramework.SqlServer.xml
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\Newtonsoft.Json.xml
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\System.Net.Http.Formatting.xml
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\System.Web.Http.xml
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\bin\System.Web.Http.WebHost.xml
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\obj\Debug\CTPWebApi.dll
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\obj\Debug\CTPWebApi.pdb
+C:\Clientele Source Code\Channel\src\WebCTPAPI\CTPWebApi\CTPWebApi\CTPWebApi\obj\Debug\CTPWebApi.csprojResolveAssemblyReference.cache

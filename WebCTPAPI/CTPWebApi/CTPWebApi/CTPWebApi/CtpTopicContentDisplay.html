@@ -1,0 +1,19 @@
+﻿<div id="TopicDisplay">
+    <table class="table">
+        <tr>
+            <td>
+                <h2><span ng-bind="topic.TopicName"></span></h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div ng-bind-html="topic.TopicContext" style="border:none; width: 700px; height: 500px; background-color: lightgrey;"></div>
+            </td>
+        </tr>
+        <tr>
+            <td style="align-items: flex-end">
+                <input ng-if="UserWriteRights" type="Button" value="Edit" class="btn btn-primary" ng-click="SetSubView('EditTopic', 'editTopic')">
+            </td>
+        </tr>
+    </table>
+</div>

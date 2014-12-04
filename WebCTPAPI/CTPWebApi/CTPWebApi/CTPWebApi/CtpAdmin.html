@@ -1,0 +1,12 @@
+﻿<div id="CtpAdmin">
+    <div class="container">
+        <div class="well" ng-controller="ManageTabsController">
+            <ul class="tabs" >
+                <li ng-repeat="tab in tabs" ng-class="{active: current == tab.name}" style="background-color: lightgrey; border-color: black">
+                    <span ng-bind="tab.name" ng-click="toggleTab(tab)" ></span>
+                </li>
+            </ul>
+            <div ng-include="tab" class="tabs-data" style="background-color: lightgrey"></div>
+        </div>
+    </div>
+</div>
