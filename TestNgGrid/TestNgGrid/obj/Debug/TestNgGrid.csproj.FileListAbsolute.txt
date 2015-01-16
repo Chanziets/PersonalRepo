@@ -4,3 +4,9 @@ C:\Clientele Source Code\Channel\TestNgGrid\TestNgGrid\bin\TestNgGrid.pdb
 C:\Clientele Source Code\Channel\TestNgGrid\TestNgGrid\obj\Debug\TestNgGrid.csprojResolveAssemblyReference.cache
 C:\Clientele Source Code\Channel\TestNgGrid\TestNgGrid\obj\Debug\TestNgGrid.dll
 C:\Clientele Source Code\Channel\TestNgGrid\TestNgGrid\obj\Debug\TestNgGrid.pdb
+C:\Clientele Source Code\PersonalRepo\TestNgGrid\TestNgGrid\bin\TestNgGrid.dll.config
+C:\Clientele Source Code\PersonalRepo\TestNgGrid\TestNgGrid\bin\TestNgGrid.dll
+C:\Clientele Source Code\PersonalRepo\TestNgGrid\TestNgGrid\bin\TestNgGrid.pdb
+C:\Clientele Source Code\PersonalRepo\TestNgGrid\TestNgGrid\obj\Debug\TestNgGrid.csprojResolveAssemblyReference.cache
+C:\Clientele Source Code\PersonalRepo\TestNgGrid\TestNgGrid\obj\Debug\TestNgGrid.dll
+C:\Clientele Source Code\PersonalRepo\TestNgGrid\TestNgGrid\obj\Debug\TestNgGrid.pdb
